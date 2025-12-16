@@ -1,247 +1,146 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lê Như | Senior Unity Developer</title>
+    <title>Le Nhu - Senior Game Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Download Button Fixed -->
-    <a href="CV-LE-NHU-Sen-Unity.pdf" download class="download-btn">
-        <i class="fas fa-download"></i>
-        <span>Download CV</span>
-    </a>
 
     <div class="container">
-        <!-- LEFT SECTION - CV Information -->
-        <div class="cv-section">
-            <!-- Header / Profile -->
-            <header class="profile-header">
-                <div class="profile-image">
-                    <img src="https://via.placeholder.com/150" alt="Profile Photo">
-                </div>
-                <div class="profile-info">
-                    <h1>LÊ NHỮ</h1>
-                    <h2>Senior Unity Developer</h2>
-                    <p class="tagline">5+ năm kinh nghiệm phát triển game mobile</p>
+        <!-- LEFT COLUMN: CV CONTENT -->
+        <main class="content-side">
+            
+            <header class="header">
+                <div class="profile-intro">
+                    <h1>LE NHU</h1>
+                    <h2 class="typing-effect">Senior Game Developer</h2>
+                    <p class="tagline">Unity (C#) | Unreal (C++) | AWS Solution Architect Aspirant</p>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:nhulemis@gmail.com"><i class="fas fa-envelope"></i> nhulemis@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/nhu-le-97157019a" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <span><i class="fas fa-map-marker-alt"></i> Da Nang, Vietnam</span>
+                    </div>
+
+                    <!-- DOWNLOAD BUTTON -->
+                    <a href="./CV_LeNhu.pdf" download class="btn-download">
+                        <i class="fas fa-file-download"></i> Download Full CV
+                    </a>
                 </div>
             </header>
 
-            <!-- Contact Info -->
-            <section class="contact-bar">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>email@example.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>0123 456 789</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Ho Chi Minh City, Vietnam</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="#">LinkedIn</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="#">GitHub</a>
+            <section class="section" id="about">
+                <h3 class="section-title">01. About Me</h3>
+                <p>
+                    Experienced Game Developer with a demonstrated history in the IT & services industry. 
+                    Skilled in <strong>Unity C#, Unreal C++, Game Development, and .NET Framework</strong>.
+                    Strong engineering professional with a Bachelor's degree from Duy Tan University.
+                </p>
+                <div class="target-box">
+                    <strong><i class="fas fa-bullseye"></i> Target 2025:</strong> 
+                    To become an <span>AWS Solution Architect</span> and achieve global certification.
                 </div>
             </section>
 
-            <!-- Main Content Grid -->
-            <div class="cv-content">
-                <!-- Summary -->
-                <section class="cv-block summary">
-                    <h3><i class="fas fa-user"></i> Giới Thiệu</h3>
-                    <p>Senior Unity Developer với hơn 5 năm kinh nghiệm trong phát triển game mobile. Chuyên môn sâu về tối ưu hóa hiệu năng, thiết kế hệ thống game và mentoring team. Đam mê tạo ra những trải nghiệm game hấp dẫn và có chất lượng cao.</p>
-                </section>
+            <section class="section" id="skills">
+                <h3 class="section-title">02. Tech Stack</h3>
+                <div class="skill-grid">
+                    <div class="skill-item">Unity 3D / C#</div>
+                    <div class="skill-item">Unreal Engine / C++</div>
+                    <div class="skill-item">NodeJS</div>
+                    <div class="skill-item">AWS</div>
+                    <div class="skill-item">DOTS / ECS</div>
+                    <div class="skill-item">Shader Graph</div>
+                    <div class="skill-item">Multiplayer (Braincloud)</div>
+                    <div class="skill-item">Git / Plastic SCM</div>
+                </div>
+            </section>
 
-                <!-- Skills -->
-                <section class="cv-block skills">
-                    <h3><i class="fas fa-code"></i> Kỹ Năng</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Game Development</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Unity 3D/2D</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">DOTS</span>
-                                <span class="tag">Shader</span>
-                                <span class="tag">Addressables</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Tools & Services</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Git</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">PlayFab</span>
-                                <span class="tag">Photon</span>
-                                <span class="tag">Jenkins</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Soft Skills</h4>
-                            <div class="skill-tags">
-                                <span class="tag">Team Lead</span>
-                                <span class="tag">Mentoring</span>
-                                <span class="tag">Agile/Scrum</span>
-                                <span class="tag">Code Review</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <section class="section" id="experience">
+                <h3 class="section-title">03. Experience</h3>
 
-                <!-- Experience -->
-                <section class="cv-block experience">
-                    <h3><i class="fas fa-briefcase"></i> Kinh Nghiệm</h3>
-                    
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h4>Senior Unity Developer</h4>
-                                    <span class="company">Game Studio ABC</span>
-                                    <span class="date">2022 - Hiện tại</span>
-                                </div>
-                                <ul>
-                                    <li>Lead team 5 developers phát triển game mobile</li>
-                                    <li>Thiết kế architecture cho các dự án mới</li>
-                                    <li>Tối ưu hiệu năng game, giảm 40% memory usage</li>
-                                    <li>Mentoring junior developers</li>
-                                </ul>
-                            </div>
-                        </div>
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="time">Apr 2022 - Present</div>
+                    <div class="role">Game Developer</div>
+                    <div class="company">Magmic (Remote)</div>
+                    <ul class="duties">
+                        <li>Developed NFT games using C# Unity (Idle of Pets, Battle Rummy).</li>
+                        <li>Optimized UI render (anti-aliasing) and game performance using DOTS/Mesh render.</li>
+                        <li>Implemented features with Braincloud, Google Firebase, AWS Amplify, and IAP.</li>
+                        <li>Created custom editor tools for database config and Shader modifications.</li>
+                    </ul>
+                </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h4>Unity Developer</h4>
-                                    <span class="company">Mobile Game Corp</span>
-                                    <span class="date">2019 - 2022</span>
-                                </div>
-                                <ul>
-                                    <li>Phát triển 3+ game mobile với 1M+ downloads</li>
-                                    <li>Implement multiplayer system với Photon</li>
-                                    <li>Tích hợp SDK quảng cáo và IAP</li>
-                                </ul>
-                            </div>
-                        </div>
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="time">Feb 2020 - Apr 2022</div>
+                    <div class="role">Unity Game Developer & .NET Dev</div>
+                    <div class="company">GIANTY</div>
+                    <ul class="duties">
+                        <li>Fixed bugs and built tool support for "Noir 2D Game" (Japanese market).</li>
+                        <li>R&D for Crypto games (Wallet connect, Data Models).</li>
+                        <li>Created mini 3D games for TOHO Game (Match-3, Tower Defense, Rhythm).</li>
+                        <li>Built tools for TMI team using C# .NET to export data and optimize queries.</li>
+                    </ul>
+                </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <div class="timeline-header">
-                                    <h4>Junior Unity Developer</h4>
-                                    <span class="company">Indie Game Studio</span>
-                                    <span class="date">2018 - 2019</span>
-                                </div>
-                                <ul>
-                                    <li>Phát triển gameplay features</li>
-                                    <li>Tạo UI/UX cho game casual</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="time">Feb 2019 - Feb 2020</div>
+                    <div class="role">Game Developer</div>
+                    <div class="company">Gameloft</div>
+                    <ul class="duties">
+                        <li>Developed "Disney Princess Majestic Quest" & "Bike in Time".</li>
+                        <li>Used C++, Python, Lua for automation and game logic.</li>
+                        <li>Analyzed/Debugged C++ issues on Android and C# Windows UWP.</li>
+                    </ul>
+                </div>
+            </section>
 
-                <!-- Projects -->
-                <section class="cv-block projects">
-                    <h3><i class="fas fa-gamepad"></i> Dự Án Tiêu Biểu</h3>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-icon">🎮</div>
-                            <h4>Game Name 1</h4>
-                            <p>Idle RPG game với 500K+ downloads</p>
-                            <div class="project-tags">
-                                <span>Unity</span>
-                                <span>Firebase</span>
-                                <span>IAP</span>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-icon">🏃</div>
-                            <h4>Game Name 2</h4>
-                            <p>Endless runner multiplayer</p>
-                            <div class="project-tags">
-                                <span>Unity</span>
-                                <span>Photon</span>
-                                <span>Ads</span>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-icon">🧩</div>
-                            <h4>Game Name 3</h4>
-                            <p>Puzzle game casual</p>
-                            <div class="project-tags">
-                                <span>Unity</span>
-                                <span>2D</span>
-                                <span>Casual</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Education -->
-                <section class="cv-block education">
-                    <h3><i class="fas fa-graduation-cap"></i> Học Vấn</h3>
-                    <div class="education-item">
-                        <h4>Đại học ABC</h4>
-                        <p>Cử nhân Công nghệ Thông tin</p>
-                        <span class="date">2014 - 2018</span>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!-- RIGHT SECTION - Phone Mockup for Game -->
-        <div class="game-section">
-            <div class="game-header">
-                <h3><i class="fas fa-mobile-alt"></i> Demo Game</h3>
-                <p>Trải nghiệm game trực tiếp</p>
-            </div>
+            <section class="section" id="education">
+                <h3 class="section-title">04. Education</h3>
+                <div class="timeline-item">
+                    <div class="time">2015 - 2019</div>
+                    <div class="role">Bachelor's Degree</div>
+                    <div class="company">Duy Tan University</div>
+                    <p>Major: Manager System Information</p>
+                </div>
+            </section>
             
-            <div class="phone-mockup">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                    <!-- Unity WebGL Game Embed Here -->
-                    <div class="game-placeholder">
-                        <i class="fas fa-gamepad"></i>
-                        <p>Unity Game</p>
-                        <span>Nhúng WebGL build tại đây</span>
-                        <!-- 
-                        Để nhúng Unity WebGL game:
-                        <iframe src="your-unity-webgl-build/index.html" 
-                                frameborder="0" 
-                                allowfullscreen>
-                        </iframe>
-                        -->
+            <footer class="footer">
+                <p>© 2024 Le Nhu. Hosted on GitHub Pages.</p>
+            </footer>
+        </main>
+
+        <!-- RIGHT COLUMN: PHONE SIMULATOR -->
+        <aside class="game-side">
+            <div class="phone-wrapper">
+                <div class="phone-case">
+                    <div class="notch"></div>
+                    <div class="screen">
+                        <!-- NHÚNG GAME UNITY CỦA BẠN Ở ĐÂY -->
+                        <!-- Nếu chưa có game, đây là placeholder -->
+                        <div class="game-placeholder">
+                            <iframe src="YOUR_GAME_URL_HERE" frameborder="0" title="My Unity Game"></iframe>
+                            <!-- Ví dụ nếu chưa có link game, bỏ comment dòng dưới để test giao diện -->
+                             <!-- <div style="display:flex; align-items:center; justify-content:center; height:100%; color:black; background:#ddd; text-align:center;">
+                                <h3>Unity Game WebGL<br>Will Load Here</h3>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
-                <div class="phone-home-btn"></div>
+                <div class="phone-shadow"></div>
+                <p class="play-hint"><i class="fas fa-gamepad"></i> Play my latest demo directly here!</p>
             </div>
+        </aside>
 
-            <div class="game-info">
-                <h4>Tên Game Demo</h4>
-                <p>Mô tả ngắn về game demo này. Click để chơi thử!</p>
-                <div class="game-controls">
-                    <button class="play-btn"><i class="fas fa-play"></i> Chơi ngay</button>
-                    <button class="fullscreen-btn"><i class="fas fa-expand"></i></button>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Lê Như. Built with ❤️ for games</p>
-    </footer>
 </body>
 </html>
