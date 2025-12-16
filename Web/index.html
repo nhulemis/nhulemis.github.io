@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-us">
+<style>
+    body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Ẩn thanh cuộn */
+    }
+    
+    #unity-container {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #unity-canvas {
+        width: 100% !important;
+        height: 100% !important;
+        background: #231F20; /* Màu nền lúc load */
+    }
+    
+    /* Ẩn cái footer mặc định của Unity (Logo, nút Fullscreen) nếu không cần */
+    #unity-footer {
+        display: none !important;
+    }
+</style>
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

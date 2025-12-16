@@ -264,12 +264,27 @@ h2 {
     border-radius: 30px;
     overflow: hidden;
     position: relative;
+    /* Thêm dòng này để xử lý nội dung tràn */
+    display: flex;       
+    align-items: center;
+    justify-content: center;
 }
 
+/* Đảm bảo khung chứa game full màn hình */
+.game-placeholder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Ép iframe full chiều rộng và cao */
 .game-placeholder iframe {
     width: 100%;
     height: 100%;
     border: none;
+    display: block;
 }
 
 .play-hint {
